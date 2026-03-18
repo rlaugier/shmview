@@ -285,6 +285,7 @@ class MyWindow(QMainWindow):
         self.pxval = self.data_img[self.pyi, self.pxi]
     def refresh_plot(self):
         x_values = np.linspace(0., 1.,  self.data_img.shape[0])
+        self.gView_shm.clear()
         for i, adata in enumerate(self.data_img.T):
             self.gView_shm.plot(x_values, adata[:], pen=self.pens[i])
         
