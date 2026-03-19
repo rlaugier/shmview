@@ -25,6 +25,7 @@ license-file = ["LICEN[CS]E*"]
 [project.scripts]
 shmview = 'shmview.shmview:main'
 shmplot = "shmview.shmplot:main"
+shmview_disp = "shmview.shmview_disp:main"
 
 [project.urls]
 Homepage = "https://github.com/fmartinache/shmview/"
